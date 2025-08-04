@@ -1,0 +1,74 @@
+api:
+  key: cb7dAfF1syt_NbyhycXushFJ20D9STRpBkspSH2vbyU
+appearance:
+  color: red
+  name: Prusa Pru2
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1734507000
+      _important:
+        read_until: 1698310200
+      _octopi:
+        read_until: 1684929600
+      _plugins:
+        read_until: 1739059200
+      _releases:
+        read_until: 1739889000
+  classicwebcam:
+    _config_version: 1
+    snapshot: http://127.0.0.1:8080/?action=snapshot
+    stream: /webcam/?action=stream
+  cura:
+    cura_engine: null
+  discovery:
+    publicPort: 80
+    upnpUuid: 5667a12e-e774-4b6d-b4b8-199b4882e1d7
+  errortracking:
+    unique_id: 2f2e206d-a301-4a24-9a64-d604a03600d3
+  excluderegion:
+    _config_version: 1
+  gcodeviewer:
+    _config_version: 1
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: true
+    unique_id: 1fe28ddb-59d7-4461-9e02-8adf125bed74
+  virtual_printer:
+    _config_version: 1
+printerProfiles:
+  default: _default
+serial:
+  autoconnect: true
+server:
+  commands:
+    serverRestartCommand: sudo service octoprint restart
+    systemRestartCommand: sudo shutdown -r now
+    systemShutdownCommand: sudo shutdown -h now
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: ad7e66ddaa91df82bbe3d08d1b5c9bab1c2f40b9464ae9f7563f2a6e1d9da12f
+  seenWizards:
+    backup: null
+    classicwebcam: 1
+    corewizard: 4
+    file_check: 1
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 200
+    name: PLA
+webcam:
+  ffmpeg: /usr/bin/ffmpeg
