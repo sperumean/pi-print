@@ -1,0 +1,13 @@
+CBUPrinting:
+  active: true
+  apikey: null
+  groups:
+  - admins
+  - users
+  password: $argon2id$v=19$m=65536,t=3,p=4$8B7DGOPcW8sZozRGKMXYew$NyLiYEgX5GdbuYeTLbBJaVwCr5hYcwN6C3OCCqikh58
+  permissions: []
+  roles:
+  - user
+  - admin
+  settings: {}
+_version: 2

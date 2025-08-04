@@ -1,0 +1,11 @@
+G91 ; Set coordinates to relative
+G1 F1800 E-3 ; Retract filament 3mm to prevent oozing
+G1 F3000 Z20 ; raise head
+G90 ; Set coordinates to absolute
+G1 X0 Y235 F1000 ; move bed to the front for print removal
+; disable motors
+M84 ; disable all heaters
+{% snippet 'disable_hotends' %}
+{% snippet 'disable_bed' %}
+;disable fan
+M106 S0
